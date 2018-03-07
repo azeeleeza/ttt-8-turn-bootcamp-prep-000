@@ -13,12 +13,14 @@ end
 def move(array, index, value="X")
   array[index] = value
 end
-
+def input_to_index(n)
+  n.to_i - 1
+end
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
 
-  index = input.to_i - 1
+  index = input_to_index(input)
 
   if valid_move?(board, index)
     move(board, index)
