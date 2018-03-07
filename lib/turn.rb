@@ -21,4 +21,4 @@ end
 # def input_to_index(n)
 #   n.to_i - 1
 # end
-# 
+#
